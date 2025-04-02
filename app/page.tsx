@@ -55,7 +55,7 @@ export default function Home() {
       <br></br>
 
       <h2 className="text-2xl font-semibold">Experience</h2>
-      <Accordion type="single" collapsible>
+      <Accordion type="single" defaultValue="item-1" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-lg font-medium w-full flex justify-between items-center">
             <span className="w-full">

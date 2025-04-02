@@ -52,11 +52,11 @@ export const MyLinks: FunctionComponent = () => {
       </div>
       <div>
         <LinkTitle>GitHub</LinkTitle>
-        <p className="flex items-center justify-center text-muted-foreground">
+        <div className="flex items-center justify-center text-muted-foreground">
           <Link url="https://github.com/wangtao-02">
             <p className="text-gray-700 dark:text-white">@wangtao-02</p>
           </Link>
-        </p>
+        </div>
       </div>
       <div>
         <LinkTitle>LinkedIn</LinkTitle>
