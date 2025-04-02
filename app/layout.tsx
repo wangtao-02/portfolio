@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import NavBar from "@/components/navbar";
 import { ThemeSwitcher } from "./theme-switcher";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center justify-center mx-auto lg:mt-4 mb-20 lg:mb-40`}
       >
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

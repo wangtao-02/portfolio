@@ -29,7 +29,7 @@ export const MyLinks: FunctionComponent = () => {
     <div className="grid grid-cols-2 sm:flex sm:flex-row sm:justify-between gap-4 sm:gap-8 text-center sm:text-left">
       <div>
         <LinkTitle>Location</LinkTitle>
-        <p className="flex items-center justify-center sm:justify-start gap-2">
+        <div className="flex items-center justify-center sm:justify-start gap-2">
           <Image
             width={16}
             height={16}
@@ -38,17 +38,17 @@ export const MyLinks: FunctionComponent = () => {
             alt="IT Flag"
           />
           <p className="text-sm text-gray-700 dark:text-white">Torino, ITA</p>
-        </p>
+        </div>
       </div>
       <div>
         <LinkTitle>Email</LinkTitle>
-        <p className="flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <Link url="mailto:wang.tao02@proton.me?subject=We have an interesting offer for you!">
             <p className="text-gray-700 dark:text-white">
               wang.tao02@proton.me
             </p>
           </Link>
-        </p>
+        </div>
       </div>
       <div>
         <LinkTitle>GitHub</LinkTitle>
