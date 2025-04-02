@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tao Wang | Full Stack Developer",
-  description: "aaaanmegri",
+  description: "Tao Wang's portfolio",
 };
 
 export default function RootLayout({

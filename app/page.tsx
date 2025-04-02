@@ -18,7 +18,7 @@ export default function Home() {
             <br />
             Wang
           </div>
-          <div className="max-w-xs pt-4 py-6 text-muted-foreground">
+          <div className="max-w-xs pt-4 py-6 text-muted-foreground font-medium">
             Full Stack Developer
           </div>
         </div>

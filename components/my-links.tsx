@@ -19,7 +19,7 @@ const Link: FunctionComponent<PropsWithChildren & { url: string }> = ({
       className="flex items-center gap-1 text-sm text-gray-200 hover:text-white transition-colors"
     >
       {children}
-      <ArrowUpRightIcon className="w-4 h-4" />
+      <ArrowUpRightIcon className="w-4 h-4  text-gray-700 dark:text-white" />
     </NextLink>
   );
 };
@@ -37,27 +37,33 @@ export const MyLinks: FunctionComponent = () => {
             src={"https://hatscripts.github.io/circle-flags/flags/it.svg"}
             alt="IT Flag"
           />
-          Torino, IT
+          <p className="text-sm text-gray-700 dark:text-white">Torino, ITA</p>
         </p>
       </div>
       <div>
         <LinkTitle>Email</LinkTitle>
         <p className="flex items-center justify-center">
           <Link url="mailto:wang.tao02@proton.me?subject=We have an interesting offer for you!">
-            wang.tao02@proton.me
+            <p className="text-gray-700 dark:text-white">
+              wang.tao02@proton.me
+            </p>
           </Link>
         </p>
       </div>
       <div>
         <LinkTitle>GitHub</LinkTitle>
-        <p className="flex items-center justify-center">
-          <Link url="https://github.com/wangtao-02">@wangtao-02</Link>
+        <p className="flex items-center justify-center text-muted-foreground">
+          <Link url="https://github.com/wangtao-02">
+            <p className="text-gray-700 dark:text-white">@wangtao-02</p>
+          </Link>
         </p>
       </div>
       <div>
         <LinkTitle>LinkedIn</LinkTitle>
-        <p className="flex items-center justify-center">
-          <Link url="https://www.linkedin.com/in/taowang02/">in/taowang02</Link>
+        <p className="flex items-center justify-center text-muted-foreground">
+          <Link url="https://www.linkedin.com/in/taowang02/">
+            <p className="text-gray-700 dark:text-white">in/taowang02</p>
+          </Link>
         </p>
       </div>
     </div>
