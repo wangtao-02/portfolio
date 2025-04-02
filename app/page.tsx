@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex justify-between">
         <div>
           <p className="text-xs">Hey there! I am</p>
-          <div className="text-5xl font-bold">
+          <div className="text-6xl font-bold">
             Tao
             <br />
             Wang
@@ -22,18 +22,19 @@ export default function Home() {
             Full Stack Developer
           </div>
         </div>
-        <div className="relative">
+        <div className="rounded-full pr-2">
           <Image
-            src="/spongebob.jpg"
+            src="/profile2.png"
             alt="Profile photo"
             unoptimized
-            width={150}
-            height={150}
+            width={160}
+            height={160}
             priority
+            className="rounded-full border-2 border-gray-300 dark:border-gray-600 shadow-lg"
           />
         </div>
       </div>
-        <MyLinks></MyLinks>
+      <MyLinks></MyLinks>
 
       <br></br>
 

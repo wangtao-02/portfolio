@@ -4,19 +4,7 @@ import { default as NextLink } from "next/link";
 import Image from "next/image";
 
 const LinkTitle: FunctionComponent<PropsWithChildren> = ({ children }) => {
-  return (
-    <h2
-      //   className={typography(
-      //     {
-      //       size: "text-sm"
-      //     },
-      //     "text-secondary leading-[2.25rem]"
-      //   )}
-      className="text-sm leading-[2.25rem]"
-    >
-      {children}
-    </h2>
-  );
+  return <h2 className="text-sm font-medium text-gray-400">{children}</h2>;
 };
 
 const Link: FunctionComponent<PropsWithChildren & { url: string }> = ({
@@ -28,51 +16,49 @@ const Link: FunctionComponent<PropsWithChildren & { url: string }> = ({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2"
-      //   className={typography({ weight: "medium" }, "flex items-center gap-2")}
+      className="flex items-center gap-1 text-sm text-gray-200 hover:text-white transition-colors"
     >
-      {children}{" "}
-      <ArrowUpRightIcon className="inline max-w-4 min-w-4" size={16} />
+      {children}
+      <ArrowUpRightIcon className="w-4 h-4" />
     </NextLink>
   );
 };
 
 export const MyLinks: FunctionComponent = () => {
   return (
-    <div className="flex items-center w-full justify-between">
+    <div className="grid grid-cols-2 sm:flex sm:flex-row sm:justify-between gap-4 sm:gap-8 text-center sm:text-left">
       <div>
         <LinkTitle>Location</LinkTitle>
-        <p className="flex items-center gap-2">
+        <p className="flex items-center justify-center sm:justify-start gap-2">
           <Image
             width={16}
             height={16}
+            className="w-4 h-4"
             src={"https://hatscripts.github.io/circle-flags/flags/it.svg"}
             alt="IT Flag"
-          />{" "}
+          />
           Torino, IT
         </p>
       </div>
       <div>
         <LinkTitle>Email</LinkTitle>
-        <Link
-          url={
-            "mailto:wang.tao02@proton.me?subject=We have an interesting offer for you!"
-          }
-        >
-          wang.tao02@proton.me
-        </Link>
+        <p className="flex items-center justify-center">
+          <Link url="mailto:wang.tao02@proton.me?subject=We have an interesting offer for you!">
+            wang.tao02@proton.me
+          </Link>
+        </p>
       </div>
-
       <div>
         <LinkTitle>GitHub</LinkTitle>
-        <Link url={"https://github.com/wangtao-02"}>@wangtao-02</Link>
+        <p className="flex items-center justify-center">
+          <Link url="https://github.com/wangtao-02">@wangtao-02</Link>
+        </p>
       </div>
-
       <div>
         <LinkTitle>LinkedIn</LinkTitle>
-        <Link url={"https://www.linkedin.com/in/taowang02/"}>
-          in/taowang02
-        </Link>
+        <p className="flex items-center justify-center">
+          <Link url="https://www.linkedin.com/in/taowang02/">in/taowang02</Link>
+        </p>
       </div>
     </div>
   );
