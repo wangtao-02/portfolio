@@ -60,11 +60,11 @@ export const MyLinks: FunctionComponent = () => {
       </div>
       <div>
         <LinkTitle>LinkedIn</LinkTitle>
-        <p className="flex items-center justify-center text-muted-foreground">
+        <div className="flex items-center justify-center text-muted-foreground">
           <Link url="https://www.linkedin.com/in/taowang02/">
             <p className="text-gray-700 dark:text-white">in/taowang02</p>
           </Link>
-        </p>
+        </div>
       </div>
     </div>
   );

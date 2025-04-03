@@ -12,7 +12,7 @@ export default function Home() {
     <section>
       <div className="flex justify-between">
         <div>
-          <p className="text-xs">Hey there! I am</p>
+          <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">Hey there! I am</p>
           <div className="text-6xl font-bold">
             Tao
             <br />
