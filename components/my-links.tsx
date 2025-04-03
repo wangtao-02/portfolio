@@ -53,7 +53,7 @@ export const MyLinks: FunctionComponent = () => {
       <div>
         <LinkTitle>GitHub</LinkTitle>
         <div className="flex items-center justify-center text-muted-foreground">
-          <Link url="https://github.com/wtao-02">
+          <Link url="https://github.com/wtao02">
             <p className="text-gray-700 dark:text-white">@wtao02</p>
           </Link>
         </div>
